@@ -1,0 +1,387 @@
+{
+  "objective": {
+    "single": {
+      "effectiveness": [
+        "chaurasiya2016binary", "krithikaa2016differential", "zhang2017combined", "haque2016optimising", "almeida2016ensembles", "folino2016incremental", "khamis2016faster", "chen2008novel", "davidsen2015multi", "lacy2015comparison", "kim2015meta", "karakativc2015weighting", "ali2015can", "liu2015genetic", "liu2014fusing", "krawczyk2013cost", "krawczyk2014breast", "krawczyk2014cost", "jackowski2014improved", "jackowski2015adaptive", "ojha2014feature", "ojha2015dimensionality", "schaefer2013evolutionary", "wozniak2009evolutionary", "dos2008overfitting", "connolly2011comparing", "connolly2012evolution", "pagano2012detector", "kapp2010adaptive", "kapp2011dynamic", "sikdar2012differential", "sikdar2013differential", "kim2002meta", "park2003evolutionarylymphoma", "kim2008evolutionaryspeciation", "folino2010ensemble", "folino2007adaptive", "folino2007streamgp", "folino2006improving", "liu2007microarray", "duell2006speciation", "de2014using", "de2011bayesian", "escovedo2013neve", "escovedo2013learning", "escovedo2013using", "escovedo2014neve++","mabu2014ensemble","mabu2015ensemble","roebber2015adaptive","ma2015ensembles","chyzhyk2015computer","trivedi2014study","fuqiang2014virus","zhang2014weighted","lones2014evolving","cao2013measure","cao2013novel","vaiciukynas2014fusion","kiranyaz2014automated","schuman2014spatiotemporal","shunmugapriya2013optimization","fatima2013classifier","joardar2017multi","dehuri2013epileptic","tsakonas2013fuzzy","cordon2013novel","kaiping2013genetic","redel2013ensembles","bagheri2013genetic","e2013clustering","tang2013reading","fernandez2016first","singh2016breast","dufourq2014hybridizing","vukobratovic2017hardware","liu2017ensemble","de2017soft","cagnini2018increasing","chen2007flexible","liu2014evolutionary","veeramachaneni2013learning","de2013evolutionary","woon2016enhanced"
+      ]
+    },
+    "multi": {
+      "effectiveness": [
+        "wen2016learning","zhang2016differential","zhang2016ensemble","obo2016evolutionary","sikdar2016generalized","saha2016multiobjective","fernandez2016sensitivity","zhang2016intelligent","rosales2017evolutionary","mauvsa2017co","augusto2010coevolutionary","ojha2017ensemble","peimankar2017evolutionary","peimankar2016ensemble","pourtaheri2016ensemble","milliken2016multi","saleh2016ensemble","onan2016multiobjective","basto2016spam","krawczyk2016evolutionary","krawczyk2015hybrid","krawczyk2014evolutionary","oehmcke2015analysis","gu2014generating","lacy2015forming","lima2015differential","parhizkar2015beeowa","parhizkar2015oc","kim2015meta","sikdar2015mode","winkler2015data","jackowski2014fixed","ko2006evolving","dos2008pareto","connolly2013dynamic","levesque2012multi","sikdar2014differential","kim2008evolutionarydna","park2003evolutionaryoptimal","coelho2003ga","rosales2014multi","hernandez2015genetic","chen2006evolutionary","liu2007microarray","castro2011learning","mehdiyev2015sensor","cao2014indicator","garg2015improving","trawinski2014embedding","de2014ensembles","ishibuchi2003evolutionary","zagorecki2014feature","santu2014towards","tian2014adaptive","bazi2014robust","tsakonas2014analysis","rapakoulia2014ensemblegasvr","escalante2013genetic","rahman2013clusteroriented","rahman2013clusterbased","bhowan2011evolving","cordon2013novel","debie2013reucs","debie2013performance","kumar2013design","aliakbarian2013internet","wang2013evolutionary","galar2013eusboost","trawinski2013multiobjective","vluymans2016eprennid","chiu2014multi","tan2014multi","chen2014unified","de2014improving","de2013optimizing","liew2017optimizing","asafuddoula2017divide","de2017soft","adair2017evolving","basto2018quadcriteria","das2017ensemble","sikdar2014entity","bhowan2013comparing","kim2005dna"
+      ],
+      "efficiency": [
+        "rosales2017evolutionary","oehmcke2015analysis"
+      ],
+      "diversity": [
+        "peimankar2017evolutionary","peimankar2016ensemble","krawczyk2015hybrid","krawczyk2014evolutionary","krawczyk2016evolutionary","ojha2017ensemble","gu2014generating","lacy2015forming","parhizkar2015beeowa","parhizkar2015oc","ko2006evolving","dos2008pareto","coelho2003ga","hernandez2015genetic","liu2007microarray","castro2011learning","tian2014adaptive","tsakonas2014analysis","rahman2013clusteroriented","rahman2013clusterbased","bhowan2011evolving","cordon2013novel","wang2013evolutionary","galar2013eusboost","trawinski2013multiobjective","chiu2014multi","de2017soft","bhowan2013comparing","kim2005dna"
+      ],
+      "complexity": [
+        "saha2016multiobjective","zhang2016intelligent","ojha2017ensemble","lima2015differential","sikdar2015mode","winkler2015data","connolly2013dynamic","rosales2014multi","chen2006evolutionary","garg2015improving","ishibuchi2003evolutionary","zagorecki2014feature","rapakoulia2014ensemblegasvr","aliakbarian2013internet","tan2014multi","chen2014unified","liew2017optimizing","basto2018quadcriteria","obo2016evolutionary","pourtaheri2016ensemble","kim2015meta","dos2008pareto","kim2008evolutionarydna","park2003evolutionaryoptimal","trawinski2014embedding","cordon2013novel","trawinski2013multiobjective","santu2014towards","asafuddoula2017divide"
+      ]
+    }
+  },
+  "evolutionary algorithm": {
+    "Flower Pollination": ["zhang2017combined"],
+    "Clonal Selection": ["de2017soft"],
+    "Evolutionary Algorithm": ["redel2013ensembles"],
+    "Inclined Planes Optimization": ["pourtaheri2016ensemble"],
+    "Multi-Objective EA": ["basto2016spam", "basto2018quadcriteria"],
+    "Moth-Flame Optimization": ["zhang2016intelligent"],
+    "Levy-flight firefly Algorithm": ["zhang2016intelligent"],
+    "Virus-Evolutionary Genetic Algorithm": ["fuqiang2014virus"],
+    "Many-Objectives Evolutionary Algorithm": ["asafuddoula2017divide"],
+    "Evolutionary Strategy": ["woon2016enhanced", "vukobratovic2017hardware"],
+    "Artificial Bee Colony": ["parhizkar2015beeowa", "parhizkar2015oc", "cao2013measure", "cao2013novel", "shunmugapriya2013optimization", "joardar2017multi"],
+    "Estimation of Distribution Algorithm": ["escovedo2013neve", "escovedo2013learning", "escovedo2013using", "escovedo2014neve++", "chen2008novel", "cagnini2018increasing", "castro2011learning"],
+    "Particle Swarm Optimization": ["peimankar2017evolutionary", "peimankar2016ensemble", "pourtaheri2016ensemble", "saleh2016ensemble", "connolly2013dynamic", "kiranyaz2014automated", "chen2008novel", "chen2007flexible", "ali2015can", "dos2008overfitting", "de2017soft", "connolly2011comparing", "connolly2012evolution", "pagano2012detector", "kapp2010adaptive", "kapp2011dynamic"],
+    "Differential Evolution": ["vluymans2016eprennid", "vaiciukynas2014fusion", "de2013optimizing", "debie2013reucs", "onan2016multiobjective", "sikdar2016generalized", "sikdar2015mode", "sikdar2014entity", "sikdar2014differential", "de2014ensembles", "de2014improving", "lima2015differential", "haque2016optimising", "zhang2016differential", "zhang2016ensemble", "krithikaa2016differential", "chaurasiya2016binary", "sikdar2012differential", "sikdar2013differential", "zhang2014weighted", "vaiciukynas2014fusion", "dehuri2013epileptic", "de2013evolutionary"],
+    "Genetic Programming": ["mabu2014ensemble", "mabu2015ensemble", "escalante2013genetic", "garg2015improving", "wen2016learning", "folino2010ensemble", "folino2006improving", "folino2016incremental", "folino2007adaptive", "folino2007streamgp", "chen2007flexible", "lacy2015forming", "lacy2015comparison", "ali2015can", "liu2015genetic", "liu2014fusing", "de2014using", "de2011bayesian", "roebber2015adaptive", "trivedi2014study", "lones2014evolving", "veeramachaneni2013learning", "dufourq2014hybridizing", "tsakonas2013fuzzy", "lacy2015forming", "tsakonas2014analysis", "bhowan2011evolving", "bhowan2013comparing"],
+    "Genetic Algorithms": ["ma2015ensembles", "krawczyk2016evolutionary", "galar2013eusboost", "fernandez2016first", "rahman2013clusteroriented", "rahman2013clusterbased", "aliakbarian2013internet", "das2017ensemble", "zagorecki2014feature", "santu2014towards", "rapakoulia2014ensemblegasvr", "wang2013evolutionary", "rosales2017evolutionary", "bazi2014robust", "basto2016spam", "rosales2014multi", "saha2016multiobjective", "mauvsa2017co", "augusto2010coevolutionary", "ojha2017ensemble", "milliken2016multi", "oehmcke2015analysis", "dos2008pareto", "levesque2012multi", "trawinski2014embedding", "ishibuchi2003evolutionary", "cordon2013novel", "trawinski2013multiobjective", "basto2018quadcriteria", "fernandez2016sensitivity", "chen2006evolutionary", "vluymans2016eprennid", "mehdiyev2015sensor", "tian2014adaptive", "gu2014generating", "chiu2014multi", "tan2014multi", "chen2014unified", "cao2014indicator", "de2013evolutionary", "kim2005dna", "e2013clustering", "debie2013reucs", "kumar2013design", "obo2016evolutionary", "dufourq2014hybridizing", "almeida2016ensembles", "khamis2016faster", "davidsen2015multi", "lacy2015comparison", "kim2015meta", "karakativc2015weighting", "winkler2015data", "krawczyk2015hybrid", "krawczyk2014evolutionary", "krawczyk2013cost", "krawczyk2014breast", "krawczyk2014cost", "jackowski2014improved", "jackowski2014fixed", "jackowski2015adaptive", "ojha2014feature", "ojha2015dimensionality", "schaefer2013evolutionary", "wozniak2009evolutionary", "ko2006evolving", "dos2008overfitting", "kim2002meta", "kim2008evolutionarydna", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "kim2008evolutionaryspeciation", "coelho2003ga", "hernandez2015genetic", "liu2007microarray", "duell2006speciation", "chyzhyk2015computer", "trivedi2014study", "liu2014evolutionary", "schuman2014spatiotemporal", "fatima2013classifier", "cordon2013novel", "kaiping2013genetic", "bagheri2013genetic", "tang2013reading", "dufourq2014hybridizing", "liu2017ensemble", "liew2017optimizing", "de2017soft", "adair2017evolving"]
+  },
+  "base learner type": {
+      "Classification Via Regression": [
+        "milliken2016multi"
+      ],
+      "Conjunctive Rule": [
+        "milliken2016multi"
+      ],
+      "Hyper Pipes": [
+        "milliken2016multi"
+      ],
+      "Polynomial Regression": [
+        "krithikaa2016differential"
+      ],
+      "Kriging": [
+        "krithikaa2016differential", "liu2017ensemble"
+      ],
+      "fuzzy cognitive map classifier model based on Quantum Computation": [
+        "ma2015ensembles"
+      ],
+      "Polynomial Response Surface": [
+        "liu2017ensemble"
+      ],
+      "Radial Basis Function": [
+        "liu2017ensemble"
+      ],
+      "Fishier": [
+        "liu2007microarray"
+      ],
+      "Hidden Markov Model": [
+        "fatima2013classifier"
+      ],
+      "Parzen-Window": [
+        "parhizkar2015beeowa"
+      ],
+      "Support Vector Data Description": [
+        "parhizkar2015beeowa"
+      ],
+      "Random Subspace Method for Decision Forests": [
+        "parhizkar2015beeowa"
+      ],
+      "Pace Regression": [
+        "jackowski2015adaptive"
+      ],
+      "Least Median Squared Linear Regression": [
+        "jackowski2015adaptive"
+      ],
+      "Linear Discriminant Analysis": [
+        "onan2016multiobjective"
+      ],
+      "Discriminant Analysis": [
+        "asafuddoula2017divide"
+      ],
+      "Bayesian Linear Discriminant Analysis": [
+        "adair2017evolving"
+      ],
+      "nsF5": [
+        "fuqiang2014virus"
+      ],
+      "Enhanced multi-size patch based Collaborative Representation based Classification (EMSPCRC)": [
+        "joardar2017multi"
+      ],
+      "Random Vector Functional Link (RVFL)": [
+        "peimankar2017evolutionary", "peimankar2016ensemble"
+      ],
+      "Decision Table": [
+        "haque2016optimising", "milliken2016multi"
+      ],
+      "Voting Feature Intervals": [
+        "haque2016optimising", "milliken2016multi"
+      ],
+      "Stochastic Gradient Descent": [
+        "hernandez2015genetic", "haque2016optimising"
+      ],
+      "Local Weighted Learning": [
+        "haque2016optimising", "hernandez2015genetic"
+      ],
+      "OneRule": [
+        "haque2016optimising", "shunmugapriya2013optimization"
+      ],
+      "Repeated Incremental Pruning to Produce Error Reduction\footnotemark[1] (RIPPER)": [
+        "milliken2016multi", "haque2016optimising", "folino2016incremental"
+      ],
+      "PART decision list": [
+        "haque2016optimising", "milliken2016multi", "shunmugapriya2013optimization"
+      ],
+      "Structure Adaptive Self-Organizing Map": [
+        "kim2005dna", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "kim2008evolutionarydna"
+      ],
+      "KRIDGE": [
+        "escalante2013genetic", "peimankar2017evolutionary", "peimankar2016ensemble"
+      ],
+      "KStar": [
+        "haque2016optimising", "shunmugapriya2013optimization", "hernandez2015genetic"
+      ],
+      "ZeroRule": [
+        "zhang2014weighted", "shunmugapriya2013optimization", "haque2016optimising"
+      ],
+      "Decision Stump": [
+        "haque2016optimising", "milliken2016multi", "shunmugapriya2013optimization", "folino2016incremental"
+      ],
+      "Bayesian Network": [
+        "pourtaheri2016ensemble", "haque2016optimising", "zhang2014weighted", "hernandez2015genetic"
+      ],
+      "Gaussian Process Regression": [
+        "winkler2015data", "ojha2015dimensionality", "ojha2014feature", "bazi2014robust", "liu2017ensemble"
+      ],
+      "Linear Regression": [
+        "jackowski2015adaptive", "ojha2015dimensionality", "jackowski2014improved", "ojha2014feature", "levesque2012multi"
+      ],
+      "Fuzzy rule-based Classifier": [
+        "trawinski2014embedding", "cordon2013novel", "mehdiyev2015sensor", "ishibuchi2003evolutionary", "fernandez2016first", "trawinski2013multiobjective"
+      ],
+      "Conditional Random Fields": [
+        "sikdar2013differential", "sikdar2012differential", "fatima2013classifier", "sikdar2015mode", "sikdar2014entity", "sikdar2014differential", "sikdar2016generalized"
+      ],
+      "Logistic Regression": [
+        "onan2016multiobjective", "escalante2013genetic", "folino2016incremental", "haque2016optimising", "saha2016multiobjective", "hernandez2015genetic", "shunmugapriya2013optimization"
+      ],
+      "Random Forests": [
+        "saha2016multiobjective", "milliken2016multi", "ali2015can", "rosales2014multi", "escalante2013genetic", "winkler2015data", "vaiciukynas2014fusion", "hernandez2015genetic"
+      ],
+      "Rule-based": [
+        "basto2016spam", "sikdar2016generalized", "mabu2015ensemble", "mabu2014ensemble", "santu2014towards", "davidsen2015multi", "debie2013performance", "debie2013reucs", "mehdiyev2015sensor", "roebber2015adaptive", "basto2018quadcriteria"
+      ],
+      "Naïve Bayes": [
+        "milliken2016multi", "ali2015can", "kumar2013design", "haque2016optimising", "folino2016incremental", "zhang2014weighted", "onan2016multiobjective", "escalante2013genetic", "zagorecki2014feature", "peimankar2017evolutionary", "peimankar2016ensemble", "shunmugapriya2013optimization", "jackowski2014fixed", "karakativc2015weighting", "hernandez2015genetic", "das2017ensemble"
+      ],
+      "K-Nearest Neighbors": [
+        "shunmugapriya2013optimization", "folino2016incremental", "escalante2013genetic", "pourtaheri2016ensemble", "peimankar2017evolutionary", "peimankar2016ensemble", "krithikaa2016differential", "oehmcke2015analysis", "winkler2015data", "ali2015can", "jackowski2014fixed", "jackowski2014improved", "dos2008overfitting", "dos2008pareto", "ko2006evolving", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "vluymans2016eprennid", "kim2015meta", "haque2016optimising", "hernandez2015genetic", "saleh2016ensemble", "zhang2014weighted", "liu2007microarray", "kim2005dna", "kim2008evolutionarydna", "milliken2016multi", "asafuddoula2017divide", "das2017ensemble"
+      ],
+      "Support Vector Machines": [
+        "hernandez2015genetic", "saha2016multiobjective", "jackowski2015adaptive", "ojha2015dimensionality", "ojha2014feature", "das2017ensemble", "haque2016optimising", "kim2008evolutionarydna", "zhang2016intelligent", "sikdar2016generalized", "rapakoulia2014ensemblegasvr", "hernandez2015genetic", "rosales2017evolutionary", "saleh2016ensemble", "gu2014generating", "parhizkar2015oc", "kim2015meta", "winkler2015data", "ali2015can", "krawczyk2014breast", "vaiciukynas2014fusion", "rosales2014multi", "tsakonas2014analysis", "escalante2013genetic", "sikdar2013differential", "sikdar2012differential", "kapp2011dynamic", "kapp2010adaptive", "liu2007microarray", "kim2005dna", "coelho2003ga", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "jackowski2014improved", "peimankar2017evolutionary", "peimankar2016ensemble", "fatima2013classifier", "tsakonas2013fuzzy", "chaurasiya2016binary", "rahman2013clusteroriented", "rahman2013clusterbased", "cao2014indicator", "onan2016multiobjective", "woon2016enhanced", "liu2017ensemble", "asafuddoula2017divide", "de2017soft", "das2017ensemble"
+      ],
+      "Decision/Arithmetic Trees": [
+        "hernandez2015genetic", "dufourq2014hybridizing", "zhang2014weighted", "krawczyk2016evolutionary", "krawczyk2015hybrid", "krawczyk2014evolutionary", "galar2013eusboost", "wen2016learning", "krawczyk2013cost", "aliakbarian2013internet", "liu2007microarray", "folino2007adaptive", "folino2007streamgp", "folino2006improving", "liu2015genetic", "liu2014fusing", "winkler2015data", "garg2015improving", "trivedi2014study", "de2014using", "krawczyk2014cost", "lones2014evolving", "schaefer2013evolutionary", "bagheri2013genetic", "de2011bayesian", "karakativc2015weighting", "oehmcke2015analysis", "lacy2015comparison", "rosales2014multi", "veeramachaneni2013learning", "bhowan2013comparing", "bhowan2011evolving", "mauvsa2017co", "augusto2010coevolutionary", "folino2010ensemble", "levesque2012multi", "lacy2015forming", "haque2016optimising", "saha2016multiobjective", "shunmugapriya2013optimization", "folino2016incremental", "tan2014multi", "chen2014unified", "milliken2016multi", "vukobratovic2017hardware", "asafuddoula2017divide", "das2017ensemble", "cagnini2018increasing"
+      ],
+      "Artificial Neural Networks": [
+        "zhang2016differential", "zhang2016ensemble", "khamis2016faster", "chyzhyk2015computer", "de2014ensembles", "de2014improving", "almeida2016ensembles", "de2013optimizing", "liu2014evolutionary", "wang2013evolutionary", "liew2017optimizing", "pourtaheri2016ensemble", "lima2015differential", "singh2016breast", "jackowski2014improved", "kim2002meta", "fatima2013classifier", "kaiping2013genetic", "fernandez2016sensitivity", "lacy2015forming", "bagheri2013genetic", "wozniak2009evolutionary", "kim2008evolutionaryspeciation", "de2013evolutionary", "tang2013reading", "zhang2017combined", "peimankar2017evolutionary", "peimankar2016ensemble", "cao2013measure", "cao2013novel", "lones2014evolving", "chen2007flexible", "ojha2017ensemble", "chen2008novel", "connolly2013dynamic", "connolly2012evolution", "pagano2012detector", "connolly2011comparing", "obo2016evolutionary", "almeida2016ensembles", "tsakonas2013fuzzy", "zhang2016intelligent", "escovedo2013using", "escovedo2013learning", "escovedo2013neve", "kim2015meta", "hernandez2015genetic", "kim2008evolutionarydna", "jackowski2015adaptive", "ojha2015dimensionality", "escovedo2014neve++", "ojha2014feature", "kim2005dna", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "e2013clustering", "kiranyaz2014automated", "tsakonas2014analysis", "tan2014multi", "chen2014unified", "saleh2016ensemble", "winkler2015data", "escalante2013genetic", "chiu2014multi", "rosales2014multi", "chen2006evolutionary", "duell2006speciation", "castro2011learning", "schuman2014spatiotemporal", "redel2013ensembles", "tian2014adaptive", "dehuri2013epileptic", "haque2016optimising", "liu2017ensemble", "asafuddoula2017divide", "das2017ensemble"
+      ]
+  },
+  "base learner distribution": {
+    "homogeneous": [
+      "mauvsa2017co", "ojha2017ensemble", "joardar2017multi", "rosales2017evolutionary", "almeida2016ensembles", "wen2016learning", "zhang2016differential", "woon2016enhanced", "krawczyk2016evolutionary", "fernandez2016first", "zhang2016ensemble", "fernandez2016sensitivity", "vluymans2016eprennid", "obo2016evolutionary", "chaurasiya2016binary", "singh2016breast", "khamis2016faster", "oehmcke2015analysis", "gu2014generating", "davidsen2015multi", "lacy2015comparison", "parhizkar2015oc", "sikdar2015mode", "karakativc2015weighting", "liu2015genetic", "krawczyk2015hybrid", "mabu2015ensemble", "ma2015ensembles", "roebber2015adaptive", "cao2014indicator", "chyzhyk2015computer", "garg2015improving", "chiu2014multi", "trivedi2014study", "jackowski2014improved", "de2014using", "fuqiang2014virus", "escovedo2014neve++", "krawczyk2014cost", "jackowski2014fixed", "krawczyk2014breast", "trawinski2014embedding", "dufourq2014hybridizing", "de2014ensembles", "de2014improving", "liu2014fusing", "krawczyk2014evolutionary", "cao2013measure", "zagorecki2014feature", "mabu2014ensemble", "santu2014towards", "liu2014evolutionary", "vaiciukynas2014fusion", "sikdar2014entity", "sikdar2014differential", "tian2014adaptive", "kiranyaz2014automated", "schuman2014spatiotemporal", "rapakoulia2014ensemblegasvr", "bazi2014robust", "schaefer2013evolutionary", "krawczyk2013cost", "rahman2013clusteroriented", "de2013optimizing", "de2013evolutionary", "rahman2013clusterbased", "debie2013reucs", "debie2013performance", "escovedo2013using", "galar2013eusboost", "trawinski2013multiobjective", "escovedo2013learning", "escovedo2013neve", "connolly2013dynamic", "cordon2013novel", "wang2013evolutionary", "aliakbarian2013internet", "cao2013novel", "dehuri2013epileptic", "kumar2013design", "kaiping2013genetic", "veeramachaneni2013learning", "bhowan2013comparing", "levesque2012multi", "connolly2012evolution", "pagano2012detector", "connolly2011comparing", "de2011bayesian", "kapp2011dynamic", "bhowan2011evolving", "kapp2010adaptive", "augusto2010coevolutionary", "folino2010ensemble", "wozniak2009evolutionary", "chen2008novel", "dos2008overfitting", "kim2008evolutionaryspeciation", "dos2008pareto", "folino2007adaptive", "chen2007flexible", "folino2007streamgp", "chen2006evolutionary", "duell2006speciation", "ko2006evolving", "folino2006improving", "ishibuchi2003evolutionary", "kim2002meta", "vukobratovic2017hardware", "liew2017optimizing", "de2017soft", "adair2017evolving", "basto2018quadcriteria", "cagnini2018increasing"
+    ],
+    "heterogeneous": [
+      "peimankar2017evolutionary", "zhang2017combined", "haque2016optimising", "pourtaheri2016ensemble", "milliken2016multi", "saleh2016ensemble", "peimankar2016ensemble", "onan2016multiobjective", "basto2016spam", "folino2016incremental", "zhang2016intelligent", "saha2016multiobjective", "sikdar2016generalized", "krithikaa2016differential", "lima2015differential", "parhizkar2015beeowa", "hernandez2015genetic", "kim2015meta", "winkler2015data", "ali2015can", "mehdiyev2015sensor", "ojha2015dimensionality", "zhang2014weighted", "lones2014evolving", "ojha2014feature", "rosales2014multi", "tsakonas2014analysis", "shunmugapriya2013optimization", "escalante2013genetic", "fatima2013classifier", "e2013clustering", "bagheri2013genetic", "sikdar2013differential", "tang2013reading", "redel2013ensembles", "tsakonas2013fuzzy", "sikdar2012differential", "castro2011learning", "kim2008evolutionarydna", "liu2007microarray", "kim2005dna", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "coelho2003ga", "liu2017ensemble", "asafuddoula2017divide", "das2017ensemble"
+    ],
+    "both": [
+      "lacy2015forming", "jackowski2015adaptive", "tan2014multi", "chen2014unified"
+    ]
+  },
+  "task": {
+    "classification": [
+      "mauvsa2017co", "joardar2017multi", "peimankar2017evolutionary", "rosales2017evolutionary", "haque2016optimising", "pourtaheri2016ensemble", "almeida2016ensembles", "wen2016learning", "milliken2016multi", "saleh2016ensemble", "zhang2016differential", "peimankar2016ensemble", "onan2016multiobjective", "basto2016spam", "folino2016incremental", "krawczyk2016evolutionary", "fernandez2016first", "zhang2016ensemble", "zhang2016intelligent", "fernandez2016sensitivity", "saha2016multiobjective", "vluymans2016eprennid", "sikdar2016generalized", "obo2016evolutionary", "chaurasiya2016binary", "singh2016breast", "khamis2016faster", "oehmcke2015analysis", "gu2014generating", "lacy2015forming", "lima2015differential", "parhizkar2015beeowa", "davidsen2015multi", "hernandez2015genetic", "lacy2015comparison", "parhizkar2015oc", "kim2015meta", "sikdar2015mode", "karakativc2015weighting", "winkler2015data", "ali2015can", "liu2015genetic", "krawczyk2015hybrid", "mabu2015ensemble", "ma2015ensembles", "mehdiyev2015sensor", "cao2014indicator", "chyzhyk2015computer", "chiu2014multi", "trivedi2014study", "jackowski2014improved", "de2014using", "fuqiang2014virus", "escovedo2014neve++", "zhang2014weighted", "krawczyk2014cost", "jackowski2014fixed", "krawczyk2014breast", "trawinski2014embedding", "dufourq2014hybridizing", "de2014ensembles", "tan2014multi", "chen2014unified", "de2014improving", "liu2014fusing", "krawczyk2014evolutionary", "cao2013measure", "zagorecki2014feature", "mabu2014ensemble", "santu2014towards", "liu2014evolutionary", "vaiciukynas2014fusion", "sikdar2014entity", "sikdar2014differential", "tian2014adaptive", "kiranyaz2014automated", "schuman2014spatiotemporal", "rosales2014multi", "schaefer2013evolutionary", "krawczyk2013cost", "shunmugapriya2013optimization", "escalante2013genetic", "rahman2013clusteroriented", "fatima2013classifier", "de2013optimizing", "de2013evolutionary", "rahman2013clusterbased", "debie2013reucs", "debie2013performance", "escovedo2013using", "galar2013eusboost", "e2013clustering", "trawinski2013multiobjective", "escovedo2013learning", "bagheri2013genetic", "escovedo2013neve", "connolly2013dynamic", "cordon2013novel", "aliakbarian2013internet", "sikdar2013differential", "tang2013reading", "cao2013novel", "dehuri2013epileptic", "kumar2013design", "bhowan2013comparing", "levesque2012multi", "sikdar2012differential", "connolly2012evolution", "pagano2012detector", "connolly2011comparing", "de2011bayesian", "kapp2011dynamic", "castro2011learning", "bhowan2011evolving", "kapp2010adaptive", "augusto2010coevolutionary", "folino2010ensemble", "wozniak2009evolutionary", "kim2008evolutionarydna", "chen2008novel", "dos2008overfitting", "kim2008evolutionaryspeciation", "dos2008pareto", "liu2007microarray", "folino2007adaptive", "folino2007streamgp", "chen2006evolutionary", "duell2006speciation", "ko2006evolving", "folino2006improving", "kim2005dna", "ishibuchi2003evolutionary", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "coelho2003ga", "kim2002meta", "vukobratovic2017hardware", "liew2017optimizing", "asafuddoula2017divide", "de2017soft", "adair2017evolving", "basto2018quadcriteria", "das2017ensemble", "cagnini2018increasing"
+    ],
+    "regression": [
+      "zhang2017combined", "woon2016enhanced", "krithikaa2016differential", "jackowski2015adaptive", "roebber2015adaptive", "ojha2015dimensionality", "garg2015improving", "lones2014evolving", "ojha2014feature", "rapakoulia2014ensemblegasvr", "tsakonas2014analysis", "bazi2014robust", "wang2013evolutionary", "redel2013ensembles", "kaiping2013genetic", "tsakonas2013fuzzy", "veeramachaneni2013learning", "chen2007flexible", "liu2017ensemble"
+    ],
+    "both": [
+      "ojha2017ensemble"
+    ]
+  },
+  "application domain": {
+    "P300 Speller channel subset optimization": [
+      "chaurasiya2016binary", "adair2017evolving"
+    ],
+    "Software Defect Prediction": [
+      "mauvsa2017co", "augusto2010coevolutionary"
+    ],
+    "Particle dissolution prediction": [
+      "ojha2014feature", "ojha2015dimensionality"
+    ],
+    "Noise by-pass detection in vehicles": [
+      "redel2013ensembles"
+    ],
+    "General classification at hardware-level": [
+      "vukobratovic2017hardware"
+    ],
+    "Industrial Machine Fault Prediction": [
+      "de2017soft"
+    ],
+    "Internet Traffic Classification": [
+      "aliakbarian2013internet"
+    ],
+    "Recommendation Systems": [
+      "tian2014adaptive"
+    ],
+    "Stock market prediction": [
+      "chen2007flexible", "mabu2014ensemble", "mabu2015ensemble"
+    ],
+    "Weather forecast": [
+      "roebber2015adaptive"
+    ],
+    "Estimation of Water Chlorophyll Concentration": [
+      "bazi2014robust"
+    ],
+    "Typhoon Intensity Prediction": [
+      "kaiping2013genetic"
+    ],
+    "One-class web traffic anomaly detection": [
+      "parhizkar2015oc"
+    ],
+    "Intrusion Detection": [
+      "milliken2016multi", "folino2016incremental", "folino2010ensemble", "kumar2013design"
+    ],
+    "Microgrid islanding detection": [
+      "khamis2016faster"
+    ],
+    "Power consumption estimation": [
+      "garg2015improving"
+    ],
+    "Wind Speed Forecasting": [
+      "zhang2017combined", "woon2016enhanced"
+    ],
+    "Electric Transformer Fault Prediction": [
+      "peimankar2017evolutionary", "peimankar2016ensemble"
+    ],
+    "Anaphora resolution": [
+      "sikdar2016generalized", "sikdar2013differential"
+    ],
+    "Sentiment Analysis": [
+      "onan2016multiobjective", "winkler2015data"
+    ],
+    "Spam detection": [
+      "basto2016spam", "trivedi2014study", "basto2018quadcriteria"
+    ],
+    "Text Entity Recognition": [
+      "sikdar2015mode", "sikdar2014entity", "sikdar2012differential", "sikdar2014differential"
+    ],
+    "Human Activity Recognition": [
+      "fatima2013classifier"
+    ],
+    "Mild Laryngeal Pathology Detection": [
+      "vaiciukynas2014fusion"
+    ],
+    "Breast Cancer Prediction": [
+      "singh2016breast", "krawczyk2016evolutionary", "krawczyk2015hybrid", "krawczyk2014evolutionary", "krawczyk2013cost", "krawczyk2014breast"
+    ],
+    "Disease Diagnosis": [
+      "davidsen2015multi"
+    ],
+    "Motion Recognition": [
+      "tan2014multi", "chen2014unified"
+    ],
+    "Seizure Identification for Epilepsy Diagnosis": [
+      "kiranyaz2014automated", "dehuri2013epileptic"
+    ],
+    "Microarray Data": [
+      "liu2015genetic", "liu2014fusing", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "liu2007microarray", "kim2005dna", "kim2008evolutionarydna", "chen2008novel", "kim2015meta", "saha2016multiobjective", "ali2015can", "rapakoulia2014ensemblegasvr"
+    ],
+    "Radar image classification": [
+      "saleh2016ensemble"
+    ],
+    "Resting-State fMRI imaging analysis for Schizophrenia Prediction": [
+      "chyzhyk2015computer"
+    ],
+    "Movement Recognition (for Parkinson Disease)": [
+      "lones2014evolving"
+    ],
+    "Handwritten Digit Recognition": [
+      "schuman2014spatiotemporal"
+    ],
+    "Posture Recognition": [
+      "obo2016evolutionary"
+    ],
+    "Diabetic Retinopathy Detection": [
+      "tang2013reading"
+    ],
+    "Handwritten Digits Recognition": [
+      "de2013evolutionary"
+    ],
+    "Facial emotion recognition": [
+      "zhang2016intelligent"
+    ],
+    "Steganalysis": [
+      "fuqiang2014virus"
+    ],
+    "Individual Recognition via Palma Dorsa Vein Pattern": [
+      "joardar2017multi"
+    ],
+    "Object Recognition": [
+      "escalante2013genetic", "bagheri2013genetic"
+    ],
+    "Face recognition": [
+      "connolly2011comparing", "connolly2012evolution", "pagano2012detector", "connolly2013dynamic"
+    ],
+    "One-class classification": [
+      "parhizkar2015beeowa"
+    ],
+    "Imbalanced classification": [
+      "cao2013measure", "cao2013novel", "santu2014towards", "bhowan2011evolving", "bhowan2013comparing", "galar2013eusboost", "vluymans2016eprennid"
+    ],
+    "General data stream-based classification and regression": [
+      "jackowski2014fixed", "kapp2010adaptive", "kapp2011dynamic", "folino2007adaptive", "folino2007streamgp", "escovedo2013neve", "escovedo2013learning", "escovedo2013using", "escovedo2014neve++", "mehdiyev2015sensor"
+    ],
+    "General batch-based classification and regression": [
+      "ojha2017ensemble", "rosales2017evolutionary", "haque2016optimising", "pourtaheri2016ensemble", "almeida2016ensembles", "wen2016learning", "zhang2016differential", "zhang2016ensemble", "fernandez2016sensitivity", "krithikaa2016differential", "oehmcke2015analysis", "gu2014generating", "lacy2015forming", "lima2015differential", "lacy2015comparison", "karakativc2015weighting", "krawczyk2014cost", "jackowski2014improved", "jackowski2015adaptive", "schaefer2013evolutionary", "wozniak2009evolutionary", "ko2006evolving", "dos2008overfitting", "dos2008pareto", "levesque2012multi", "kim2002meta", "kim2008evolutionaryspeciation", "coelho2003ga", "rosales2014multi", "folino2006improving", "hernandez2015genetic", "chen2006evolutionary", "duell2006speciation", "de2014using", "de2011bayesian", "castro2011learning", "ma2015ensembles", "cao2014indicator", "zhang2014weighted", "trawinski2014embedding", "de2014ensembles", "ishibuchi2003evolutionary", "zagorecki2014feature", "liu2014evolutionary", "tsakonas2014analysis", "shunmugapriya2013optimization", "rahman2013clusteroriented", "rahman2013clusterbased", "veeramachaneni2013learning", "tsakonas2013fuzzy", "cordon2013novel", "debie2013reucs", "debie2013performance", "wang2013evolutionary", "bagheri2013genetic", "e2013clustering", "trawinski2013multiobjective", "fernandez2016first", "chiu2014multi", "dufourq2014hybridizing", "tan2014multi", "chen2014unified", "de2014improving", "de2013optimizing", "liu2017ensemble", "liew2017optimizing", "asafuddoula2017divide", "das2017ensemble", "cagnini2018increasing"
+    ]
+  },
+  "step": {
+    "generation": {
+      "instance selection": [
+        "krawczyk2016evolutionary", "krawczyk2015hybrid", "krawczyk2014evolutionary", "almeida2016ensembles", "gu2014generating", "karakativc2015weighting", "de2014ensembles", "galar2013eusboost", "vluymans2016eprennid", "adair2017evolving"
+      ],
+      "attribute selection": [
+        "peimankar2017evolutionary", "peimankar2016ensemble", "sikdar2016generalized", "saha2016multiobjective", "oehmcke2015analysis", "chen2008novel", "gu2014generating", "lima2015differential", "sikdar2015mode", "winkler2015data", "sikdar2014entity", "sikdar2012differential", "sikdar2014differential", "sikdar2013differential", "kim2002meta", "liu2007microarray", "mehdiyev2015sensor", "chyzhyk2015computer", "zagorecki2014feature", "vaiciukynas2014fusion", "tian2014adaptive", "rapakoulia2014ensemblegasvr", "debie2013reucs", "debie2013performance", "kumar2013design", "aliakbarian2013internet", "bagheri2013genetic", "tan2014multi", "chen2014unified", "de2014improving", "de2013optimizing", "de2017soft", "das2017ensemble"
+      ],
+      "pre model": [
+        "woon2016enhanced", "rosales2017evolutionary", "saha2016multiobjective", "almeida2016ensembles", "ojha2017ensemble", "khamis2016faster", "lima2015differential", "winkler2015data", "connolly2011comparing", "connolly2012evolution", "pagano2012detector", "connolly2013dynamic", "kapp2010adaptive", "kapp2011dynamic", "rosales2014multi", "vaiciukynas2014fusion", "rapakoulia2014ensemblegasvr", "dehuri2013epileptic", "singh2016breast", "de2014improving", "de2013optimizing", "liu2017ensemble", "liew2017optimizing", "de2017soft"
+      ],
+      "post model": [
+        "krithikaa2016differential", "fernandez2016sensitivity", "wen2016learning", "mauvsa2017co", "augusto2010coevolutionary", "ojha2017ensemble", "chen2007flexible", "lacy2015forming", "davidsen2015multi", "lacy2015comparison", "levesque2012multi", "kim2008evolutionaryspeciation", "folino2010ensemble", "folino2007adaptive", "folino2007streamgp", "folino2006improving", "duell2006speciation", "de2014using", "de2011bayesian", "castro2011learning", "escovedo2013neve", "escovedo2013learning", "escovedo2013using", "escovedo2014neve++", "mabu2014ensemble", "mabu2015ensemble", "roebber2015adaptive", "garg2015improving", "trivedi2014study", "lones2014evolving", "de2014ensembles", "ishibuchi2003evolutionary", "cao2013measure", "cao2013novel", "santu2014towards", "tian2014adaptive", "kiranyaz2014automated", "schuman2014spatiotemporal", "bhowan2011evolving", "bhowan2013comparing", "veeramachaneni2013learning", "debie2013reucs", "debie2013performance", "kaiping2013genetic", "redel2013ensembles", "fernandez2016first", "singh2016breast", "dufourq2014hybridizing", "de2014improving", "de2013optimizing", "vukobratovic2017hardware"
+      ]
+    },
+    "integration": {
+      "first degree polynomial": [
+        "zhang2016intelligent", "haque2016optimising", "zhang2016differential", "zhang2016ensemble", "krawczyk2016evolutionary", "krawczyk2015hybrid", "krawczyk2014evolutionary", "krawczyk2013cost", "krawczyk2014breast", "krawczyk2014cost", "chaurasiya2016binary", "obo2016evolutionary", "zhang2017combined", "onan2016multiobjective", "pourtaheri2016ensemble", "saleh2016ensemble", "basto2016spam", "ojha2017ensemble", "davidsen2015multi", "lacy2015comparison", "kim2015meta", "sikdar2015mode", "sikdar2014entity", "jackowski2014improved", "jackowski2014fixed", "jackowski2015adaptive", "ojha2014feature", "ojha2015dimensionality", "schaefer2013evolutionary", "wozniak2009evolutionary", "sikdar2012differential", "sikdar2014differential", "sikdar2013differential", "kim2008evolutionarydna", "liu2007microarray", "escovedo2013neve", "escovedo2014neve++", "escovedo2013learning", "escovedo2013using", "fuqiang2014virus", "zhang2014weighted", "liu2014evolutionary", "fatima2013classifier", "joardar2017multi", "galar2013eusboost", "cagnini2018increasing"
+      ],
+      "expression trees": [
+        "folino2016incremental", "lacy2015forming", "lacy2015comparison", "ali2015can", "liu2015genetic", "liu2014fusing", "tsakonas2014analysis", "escalante2013genetic"
+      ],
+      "artificial neural network": [
+        "lacy2015comparison"
+      ],
+      "fuzzy system": [
+        "cordon2013novel", "trawinski2014embedding", "tsakonas2013fuzzy"
+      ],
+      "ecoc": [
+        "cao2014indicator"
+      ],
+      "iowa": [
+        "bazi2014robust"
+      ],
+      "selection of meta classifier": [
+        "shunmugapriya2013optimization"
+      ]
+    },
+    "selection": {
+      "static": [
+        "almeida2016ensembles", "milliken2016multi", "sikdar2016generalized", "saha2016multiobjective", "basto2016spam", "pourtaheri2016ensemble", "obo2016evolutionary", "oehmcke2015analysis", "chen2008novel", "parhizkar2015beeowa", "parhizkar2015oc", "kim2015meta", "jackowski2014improved", "jackowski2015adaptive", "ko2006evolving", "dos2008overfitting", "dos2008pareto", "kim2008evolutionarydna", "kim2005dna", "park2003evolutionaryoptimal", "park2003evolutionarylymphoma", "coelho2003ga", "rosales2014multi", "hernandez2015genetic", "chen2006evolutionary", "castro2011learning", "ma2015ensembles", "cordon2013novel", "kumar2013design", "wang2013evolutionary", "tang2013reading", "singh2016breast", "chiu2014multi", "dufourq2014hybridizing", "de2013evolutionary", "rahman2013clusteroriented", "rahman2013clusterbased", "e2013clustering", "shunmugapriya2013optimization", "liew2017optimizing", "asafuddoula2017divide", "de2017soft", "basto2018quadcriteria"
+      ],
+      "dynamic": [
+        "lima2015differential", "cordon2013novel", "trawinski2013multiobjective"
+      ]
+    }
+  }
+}
