@@ -120,5 +120,5 @@ if __name__ == '__main__':
         data_path='../data.json',
         bibliography_path='../bibliography.bib',
         template_path='../templates/master_table_template.html',
-        write_path='../master_table.html'
+        write_path='../index.html'
     )

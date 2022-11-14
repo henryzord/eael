@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Master Table</title>
+    <style>
+        * {
+            font-family: Helvetica, sans-serif;
+            font-size: 12pt;
+        }
+
+        .center {
+            margin: auto;
+            width: 95%;
+            height: 100%;
+        }
+
+        h1.center {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20pt;
+        }
+
+        body {
+            background-color: rgb(133, 97, 254);
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 100%;
+        }
+
+        .white-background {
+            background-color: white;
+            height: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        td, th {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #D0D0D0;
+        }
+
+        th:hover {
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        th.wide {
+            width: 250px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+
+        tr:hover {
+            background-color: #D0D0D0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="center white-background">
+    <br/>
+    <h1 class="center">Master Table</h1>
+
+    <table id="master_table">
+	<tr>
+
+        		<th class="wide" onclick="sortTable(0)">Authors</th>
+        
+		<th class="wide" onclick="sortTable(1)">Title</th>
+
+    
+            		<th onclick="sortTable(2)">
+        objective</th>
+
+            		<th onclick="sortTable(3)">
+        evolutionary algorithm</th>
+
+            		<th onclick="sortTable(4)">
+        base learner type</th>
+
+            		<th onclick="sortTable(5)">
+        base learner distribution</th>
+
+            		<th onclick="sortTable(6)">
+        task</th>
+
+            		<th onclick="sortTable(7)">
+        application domain</th>
+
+            		<th onclick="sortTable(8)">
+        step</th>
+	</tr>
+	<tr>
+		<td>R K Chaurasiya, N D Londhe, S Ghosh</td>
+		<td>Binary DE-based Channel Selection and Weighted Ensemble of SVM Classification for Novel Brain–computer Interface using Devanagari script-based P300 Speller Paradigm</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>P300 Speller channel subset optimization</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>M Krithikaa, R Mallipeddi</td>
+		<td>Differential Evolution with an Ensemble of Low-quality Surrogates for Expensive Optimization Problems</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Polynomial Regression, Kriging, K-Nearest Neighbors</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>W Zhang et al.</td>
+		<td>A Combined Model based on CEEMDAN and Modified Flower Pollination Algorithm for Wind Speed Forecasting</td>
+		<td>single: effectiveness</td>
+		<td>Flower Pollination</td>
+		<td>Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>Wind Speed Forecasting</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>M N Haque, M N Noman, R Berretta, P Moscato</td>
+		<td>Optimising Weights for Heterogeneous Ensemble of Classifiers with Differential Evolution</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Decision Table, Voting Feature Intervals, Stochastic Gradient Descent, Local Weighted Learning, OneRule, Repeated Incremental Pruning to Produce Error Reduction (RIPPER), PART decision list, KStar, ZeroRule, Decision Stump, Bayesian Network, Logistic Regression, Naïve Bayes, K-Nearest Neighbors, Support Vector Machines, Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>L M Almeida, P S Galvão</td>
+		<td>Ensembles with Clustering-and-Selection Model Using Evolutionary Algorithms</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks, Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: instance selection, pre-model; selection: static</td>	</tr>
+	<tr>
+		<td>G Folino, F S Pisani, P Sabatino</td>
+		<td>An Incremental Ensemble Evolved by using Genetic Programming to Efficiently Detect drifts in Cyber Security Datasets</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Repeated Incremental Pruning to Produce Error Reduction (RIPPER), Decision Stump, Logistic Regression, Naïve Bayes, K-Nearest Neighbors, Decision/Arithmetic Trees</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Intrusion Detection</td>
+		<td>integration: expression trees</td>	</tr>
+	<tr>
+		<td>A Khamis, Y Xu, Z Y Dong, R Zhang</td>
+		<td>Faster Detection of Microgrid Islanding Events using an Adaptive Ensemble Classifier</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Microgrid islanding detection</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>Y Chen, Y Zhao</td>
+		<td>A novel Ensemble of Classifiers for Microarray Data Classification</td>
+		<td>single: effectiveness</td>
+		<td>Estimation of Distribution Algorithm, Particle Swarm Optimization</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>generation: attribute selection; selection: static</td>	</tr>
+	<tr>
+		<td>S A Davidsen, M Padmavathamma</td>
+		<td>Multi-modal Evolutionary Ensemble Classification in Medical Diagnosis Problems</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Rule-based</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Disease Diagnosis</td>
+		<td>generation: post model; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>S E Lacy, M A Lones, S L Smith</td>
+		<td>A Comparison of Evolved Linear and Non-linear Ensemble Vote Aggregators</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming, Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model; integration: first degree polynomial, expression trees, artificial neural network</td>	</tr>
+	<tr>
+		<td>K Kim, S Cho</td>
+		<td>Meta-classifiers for High-dimensional, Small Sample Classification for Gene Expression Analysis</td>
+		<td>single: effectiveness; multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>integration: first degree polynomial; selection: static</td>	</tr>
+	<tr>
+		<td>S Karakatič, M Heričko, V Podgorelec</td>
+		<td>Weighting and Sampling data for Individual Classifiers and Bagging with Genetic Algorithms</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Naïve Bayes, Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: instance selection</td>	</tr>
+	<tr>
+		<td>S Ali, A Majid</td>
+		<td>Can–Evo–Ens: Classifier Stacking based Evolutionary Ensemble System for Prediction of Human Breast Cancer using Amino Acid Sequences</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization, Genetic Programming</td>
+		<td>Random Forests, Naïve Bayes, K-Nearest Neighbors, Support Vector Machines</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>integration: expression trees</td>	</tr>
+	<tr>
+		<td>K Liu, M Tong, S Xie, V T Yee Ng</td>
+		<td>Genetic Programming based Ensemble System for Microarray Data Classification</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>integration: expression trees</td>	</tr>
+	<tr>
+		<td>K Liu, M Tong, S Xie, Z Zeng</td>
+		<td>Fusing Decision Trees based on Genetic Programming for Classification of Microarray Datasets</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>integration: expression trees</td>	</tr>
+	<tr>
+		<td>B Krawczyk, G Schaefer, M Woźniak</td>
+		<td>A Cost-sensitive Ensemble Classifier for Breast Cancer Classification</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Breast Cancer Prediction</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>B Krawczyk, G Schaefer</td>
+		<td>Breast Thermogram Analysis using Classifier Ensembles and Image Symmetry Features</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Breast Cancer Prediction</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>B Krawczyk, M Woźniak, G Schaefer</td>
+		<td>Cost-sensitive Decision Tree Ensembles for Effective Imbalanced Classification</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>K Jackowski, B Krawczyk, M Woźniak</td>
+		<td>Improved Adaptive Splitting and Selection: The Hybrid Training Method of a Classifier based on a Feature Space Partitioning</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Linear Regression, K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial; selection: static</td>	</tr>
+	<tr>
+		<td>K Jackowski</td>
+		<td>Adaptive Splitting and Selection Algorithm for Regression</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Pace Regression, Least Median Squared Linear Regression, Linear Regression, Support Vector Machines, Artificial Neural Networks</td>
+		<td>both</td>
+		<td>regression</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial; selection: static</td>	</tr>
+	<tr>
+		<td>V K Ojha, K Jackowski, A Abraham, V Snášel</td>
+		<td>Feature Selection and Ensemble of Regression Models for Predicting the Protein Macromolecule Dissolution Profile</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Gaussian Process Regression, Linear Regression, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>Particle dissolution prediction</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>V K Ojha, K Jackowski, A Abraham, V Snášel</td>
+		<td>Dimensionality Reduction, and Function Approximation of Poly (Lactic-co-glycolic acid) Micro-and Nanoparticle Dissolution Rate</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Gaussian Process Regression, Linear Regression, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>Particle dissolution prediction</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>G Schaefer</td>
+		<td>Evolutionary Optimisation of Classifiers and Classifier Ensembles for Cost-sensitive Pattern Recognition</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>M Wozniak</td>
+		<td>Evolutionary Approach to Produce Classifier Ensemble based on Weighted Voting</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>E M Dos Santos, L S Oliveira, R Sabourin, P Maupin</td>
+		<td>Overfitting in the Selection of Classifier Ensembles: a Comparative study Between PSO and GA</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization, Genetic Algorithms</td>
+		<td>K-Nearest Neighbors</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>J Connolly, E Granger, R Sabourin</td>
+		<td>Comparing Dynamic PSO Algorithms for Adapting Classifier Ensembles in Video-based Face Recognition</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Face recognition</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>J Connolly, E Granger, R Sabourin</td>
+		<td>Evolution of Heterogeneous Ensembles through Dynamic Particle Swarm Optimization for Video-based Face Recognition</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Face recognition</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>C Pagano, E Granger, R Sabourin, D O Gorodnichy</td>
+		<td>Detector Ensembles for Face Recognition in Video Surveillance</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Face recognition</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>M N Kapp, R Sabourin, P Maupin</td>
+		<td>Adaptive Incremental Learning with an Ensemble of Support Vector Machines</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>M N Kapp, R Sabourin, P Maupin</td>
+		<td>A Dynamic Optimization Approach for Adaptive Incremental Learning</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>U K Sikdar, A Ekbal, S Saha</td>
+		<td>Differential Evolution based Feature Selection and Classifier Ensemble for Named Entity Recognition</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Conditional Random Fields, Support Vector Machines</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Text Entity Recognition</td>
+		<td>generation: attribute selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>U K Sikdar, A Ekbal, S Saha</td>
+		<td>Differential Evolution based Mention Detection for Anaphora Resolution</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Conditional Random Fields, Support Vector Machines</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Anaphora resolution</td>
+		<td>generation: attribute selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>Y Kim, W N Street, F Menczer</td>
+		<td>Meta-evolutionary Ensembles</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>C Park, S Cho</td>
+		<td>Evolutionary Ensemble Classifier for Lymphoma and Colon Cancer Classification</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Structure Adaptive Self-Organizing Map, K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>K Kim, S Cho</td>
+		<td>Evolutionary Ensemble of Diverse Artificial Neural Networks using Speciation</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>G Folino, C Pizzuti, G Spezzano</td>
+		<td>An Ensemble-based Evolutionary Framework for Coping with Distributed Intrusion Detection</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Intrusion Detection</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>G Folino, C Pizzuti, G Spezzano</td>
+		<td>An Adaptive Distributed Ensemble Approach to Mine Concept-drifting Data Streams</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>G Folino, C Pizzuti, G Spezzano</td>
+		<td>StreamGP: Tracking Evolving GP Ensembles in Distributed Data Streams using Fractal Dimension</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>G Folino, C Pizzuti, G Spezzano</td>
+		<td>Improving Cooperative GP Ensemble with Clustering and Pruning for Pattern Classification</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>K Liu, D Huang, J Zhang</td>
+		<td>Microarray Data Prediction by Evolutionary Classifier Ensemble System</td>
+		<td>single: effectiveness; multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Fishier, K-Nearest Neighbors, Support Vector Machines, Decision/Arithmetic Trees</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>generation: attribute selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>P Duell, I Fermin, X Yao</td>
+		<td>Speciation Techniques in Evolved Ensembles with Negative Correlation Learning</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>C De Stefano, G Folino, F Fontanella, A S Di Freca</td>
+		<td>Using Bayesian Networks for Selecting Classifiers in GP Ensembles</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>C D Stefano, F Fontanella, G Folino, A Freca</td>
+		<td>A Bayesian approach for Combining Ensembles of GP Classifiers</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>T Escovedo, A da Cruz, M Vellasco, A Koshiyama</td>
+		<td>NEVE: A Neuro-evolutionary Ensemble for Adaptive Learning</td>
+		<td>single: effectiveness</td>
+		<td>Estimation of Distribution Algorithm</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: post model; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>T Escovedo, A V A da Cruz, M M Vellasco, A S Koshiyama</td>
+		<td>Learning Under Concept Drift Using a Neuro-evolutionary Ensemble</td>
+		<td>single: effectiveness</td>
+		<td>Estimation of Distribution Algorithm</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: post model; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>T Escovedo, A V A da Cruz, M Vellasco, A S Koshiyama</td>
+		<td>Using Ensembles for Adaptive Learning: A Comparative Approach</td>
+		<td>single: effectiveness</td>
+		<td>Estimation of Distribution Algorithm</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: post model; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>T Escovedo et al.</td>
+		<td>NEVE++: A Neuro-evolutionary Unlimited Ensemble for Adaptive Learning</td>
+		<td>single: effectiveness</td>
+		<td>Estimation of Distribution Algorithm</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: post model; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>S Mabu, M Obayashi, T Kuremoto</td>
+		<td>Ensemble Learning of Rule-based Evolutionary Algorithm using Multi Layer Perceptron for Stock Trading Models</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Rule-based</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Stock market prediction</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>S Mabu, M Obayashi, T Kuremoto</td>
+		<td>Ensemble Learning of Rule-based Evolutionary Algorithm using Multi-layer Perceptron for Supporting Decisions in Stock Trading Problems</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Rule-based</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Stock market prediction</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>P J Roebber</td>
+		<td>Adaptive Evolutionary Programming</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Rule-based</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>Weather forecast</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>N Ma, H Fujita, Y Zhai, S Wang</td>
+		<td>Ensembles of Fuzzy Cognitive Map Classifiers Based on Quantum Computation</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>fuzzy cognitive map classifier model based on Quantum Computation</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>D Chyzhyk, A Savio, M Graña</td>
+		<td>Computer Aided Diagnosis of Schizophrenia on Resting State fMRI data by Ensembles of ELM</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Resting-State fMRI imaging analysis for Schizophrenia Prediction</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>S K Trivedi, S Dey</td>
+		<td>A Study of Ensemble based Evolutionary Classifiers for Detecting Unsolicited Emails</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming, Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Spam detection</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>D Fuqiang, Z Minqing, L Jia</td>
+		<td>Virus-Evolutionary Genetic Algorithm Based Selective Ensemble for Steganalysis</td>
+		<td>single: effectiveness</td>
+		<td>Virus-Evolutionary Genetic Algorithm</td>
+		<td>nsF5</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Steganalysis</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>Y Zhang, H Zhang, J Cai, B Yang</td>
+		<td>A Weighted Voting Classifier based on Differential Evolution</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>ZeroRule, Bayesian Network, Naïve Bayes, K-Nearest Neighbors, Decision/Arithmetic Trees</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>M A Lones et al.</td>
+		<td>Evolving Classifiers to Recognize the Movement Characteristics of Parkinson's Disease Patients</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>Movement Recognition (for Parkinson Disease)</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>P Cao, D Zhao, O Zaiane</td>
+		<td>Measure Optimized Cost-sensitive Neural Network Ensemble for Multiclass Imbalance Data Learning</td>
+		<td>single: effectiveness</td>
+		<td>Artificial Bee Colony</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Imbalanced classification</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>P Cao, B Li, D Zhao, O Zaiane</td>
+		<td>A Novel Cost Sensitive Neural Network Ensemble for Multiclass Imbalance Data Learning</td>
+		<td>single: effectiveness</td>
+		<td>Artificial Bee Colony</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Imbalanced classification</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>E Vaiciukynas et al.</td>
+		<td>Fusion of Voice Signal Information for Detection of Mild Laryngeal Pathology</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution, Differential Evolution</td>
+		<td>Random Forests, Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Mild Laryngeal Pathology Detection</td>
+		<td>generation: attribute selection, pre-model</td>	</tr>
+	<tr>
+		<td>S Kiranyaz, T Ince, M Zabihi, D Ince</td>
+		<td>Automated Patient-specific Classification of Long-term Electroencephalography</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Seizure Identification for Epilepsy Diagnosis</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>C D Schuman, J D Birdwell, M E Dean</td>
+		<td>Spatiotemporal Classification using Neuroscience-inspired Dynamic Architectures</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Handwritten Digit Recognition</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>P Shunmugapriya, S Kanmani</td>
+		<td>Optimization of Stacking Ensemble Configurations through Artificial Bee Colony Algorithm</td>
+		<td>single: effectiveness</td>
+		<td>Artificial Bee Colony</td>
+		<td>OneRule, PART decision list, KStar, ZeroRule, Decision Stump, Logistic Regression, Naïve Bayes, K-Nearest Neighbors, Decision/Arithmetic Trees</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: selection of meta classifier; selection: static</td>	</tr>
+	<tr>
+		<td>I Fatima, M Fahim, Y Lee, S Lee</td>
+		<td>Classifier Ensemble Optimization for Human Activity Recognition in Smart Homes</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Hidden Markov Model, Conditional Random Fields, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Human Activity Recognition</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>S Joardar, A Chatterjee, S Bandyopadhyay, U Maulik</td>
+		<td>Multi-size Patch based Collaborative Representation for Palm Dorsa Vein Pattern Recognition by Enhanced Ensemble Learning with Modified Interactive Artificial Bee Colony Algorithm</td>
+		<td>single: effectiveness</td>
+		<td>Artificial Bee Colony</td>
+		<td>Enhanced multi-size patch based Collaborative Representation based Classification (EMSPCRC)</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Individual Recognition via Palma Dorsa Vein Pattern</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>S Dehuri, A K Jagadev, S Cho</td>
+		<td>Epileptic Seizure Identification from Electroencephalography signal using DE-RBFNs Ensemble</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Seizure Identification for Epilepsy Diagnosis</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>A Tsakonas, B Gabrys</td>
+		<td>A Fuzzy Evolutionary Framework for Combining Ensembles</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: fuzzy system</td>	</tr>
+	<tr>
+		<td>O Cordón, K Trawiński</td>
+		<td>A Novel Framework to Design Fuzzy Rule-based Ensembles using Diversity Induction and Evolutionary Algorithms-based Classifier Selection and Fusion</td>
+		<td>single: effectiveness; multi: effectiveness, diversity, complexity</td>
+		<td>Genetic Algorithms, Genetic Algorithms</td>
+		<td>Fuzzy rule-based Classifier</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: fuzzy system; selection: static, dynamic</td>	</tr>
+	<tr>
+		<td>L Kaiping, C Binglian, D Yan, H Ying</td>
+		<td>A Genetic Neural Network Ensemble Prediction Model based on Locally Linear Embedding for Typhoon Intensity</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>Typhoon Intensity Prediction</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>M D Redel-Macías et al.</td>
+		<td>Ensembles of Evolutionary Product Unit or RBF Neural Networks for the Identification of Sound for Pass-by Noise Test in Vehicles</td>
+		<td>single: effectiveness</td>
+		<td>Evolutionary Algorithm</td>
+		<td>Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>Noise by-pass detection in vehicles</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>M A Bagheri, Q Gao, S Escalera</td>
+		<td>A Genetic-based Subspace Analysis method for Improving Error-correcting Output Coding</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Object Recognition, General batch-based classification and regression</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>E J d R e Silva, T B Ludermir, L M Almeida</td>
+		<td>Clustering and Selection using Grouping Genetic Algorithms for Blockmodeling to construct Neural Network Ensembles</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>H L Tang et al.</td>
+		<td>The Reading of Components of Diabetic Retinopathy: An Evolutionary approach for Filtering normal Digital Fundus Imaging in Screening and Population based Studies</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Diabetic Retinopathy Detection</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>A Fernández, S del Río, F Herrera</td>
+		<td>A First Approach in Evolutionary Fuzzy Systems based on the Lateral Tuning of the Linguistic Labels for Big Data Classification</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Fuzzy rule-based Classifier</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>I Singh, K Sanwal, S Praveen</td>
+		<td>Breast Cancer Detection using two-fold Genetic Evolution of Neural Network Ensembles</td>
+		<td>single: effectiveness</td>
+		<td>nan</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Breast Cancer Prediction</td>
+		<td>generation: pre-model, post model; selection: static</td>	</tr>
+	<tr>
+		<td>E Dufourq, N Pillay</td>
+		<td>Hybridizing Evolutionary Algorithms for Creating Classifier Ensembles</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming, Genetic Algorithms, Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model; selection: static</td>	</tr>
+	<tr>
+		<td>B Vukobratović, R Struharik</td>
+		<td>Hardware Acceleration of Nonincremental Algorithms for the Induction of Decision Trees</td>
+		<td>single: effectiveness</td>
+		<td>Evolutionary Strategy</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General classification at hardware-level</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>Y Liu et al.</td>
+		<td>Ensemble of Surrogates with an Evolutionary Multi-agent System</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Kriging, Polynomial Response Surface, Radial Basis Function, Gaussian Process Regression, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>J de Oliveira Batista, R B Rodrigues, F M Varejão</td>
+		<td>Soft Computing Classifier Ensemble for Fault Diagnosis</td>
+		<td>single: effectiveness; multi: effectiveness, diversity</td>
+		<td>Clonal Selection, Particle Swarm Optimization, Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Industrial Machine Fault Prediction</td>
+		<td>generation: attribute selection, pre-model; selection: static</td>	</tr>
+	<tr>
+		<td>H Cagnini, M Basgalupp, R Barros</td>
+		<td>Increasing Boosting Effectiveness with Estimation of Distribution Algorithms</td>
+		<td>single: effectiveness</td>
+		<td>Estimation of Distribution Algorithm</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>Y Chen, B Yang, A Abraham</td>
+		<td>Flexible Neural Trees Ensemble for Stock Index Modeling</td>
+		<td>single: effectiveness</td>
+		<td>Particle Swarm Optimization, Genetic Programming</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>Stock market prediction</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>N Liu et al.</td>
+		<td>Evolutionary Voting-based Extreme Learning Machines</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>K Veeramachaneni, O Derby, D Sherry, U O'Reilly</td>
+		<td>Learning Regression Ensembles with Genetic Programming at Scale</td>
+		<td>single: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>C De Stefano, A D Cioppa, A Marcelli</td>
+		<td>Evolutionary Approaches for Pooling Classifier Ensembles: Performance Evaluation</td>
+		<td>single: effectiveness</td>
+		<td>Differential Evolution, Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Handwritten Digits Recognition</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>W L Woon, O Kramer</td>
+		<td>Enhanced SVR Ensembles for Wind Power Prediction</td>
+		<td>single: effectiveness</td>
+		<td>Evolutionary Strategy</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>Wind Speed Forecasting</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>Y Wen, C Ting</td>
+		<td>Learning Ensemble of Decision Trees through Multifactorial Genetic Programming</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>Y Zhang, B Liu, F Yang</td>
+		<td>Differential Evolution Based Selective Ensemble of Extreme Learning Machine</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>Y Zhang, B Liu, J Cai, S Zhang</td>
+		<td>Ensemble Weighted Extreme Learning Machine for Imbalanced Data Classification based on Differential Evolution</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>T Obo, N Kubota, C K Loo</td>
+		<td>Evolutionary Ensemble Learning of Fuzzy Randomized Neural Network for Posture Recognition</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Posture Recognition</td>
+		<td>integration: first degree polynomial; selection: static</td>	</tr>
+	<tr>
+		<td>U K Sikdar, A Ekbal, S Saha</td>
+		<td>A Generalized Framework for Anaphora Resolution in Indian Languages</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Conditional Random Fields, Rule-based, Support Vector Machines</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Anaphora resolution</td>
+		<td>generation: attribute selection; selection: static</td>	</tr>
+	<tr>
+		<td>S Saha, S Mitra, R K Yadav</td>
+		<td>A Multiobjective based Automatic Framework for Classifying Cancer-microRNA Biomarkers</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Logistic Regression, Random Forests, Support Vector Machines, Decision/Arithmetic Trees</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>generation: attribute selection, pre-model; selection: static</td>	</tr>
+	<tr>
+		<td>J C Fernández, M Cruz-Ramírez, C Hervás-Martínez</td>
+		<td>Sensitivity versus Accuracy in Ensemble Models of Artificial Neural Networks from Multi-objective Evolutionary Algorithms</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>L Zhang, K Mistry, S C Neoh, C P Lim</td>
+		<td>Intelligent Facial Emotion Recognition using Moth-firefly Optimization</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Moth-Flame Optimization, Levy-flight firefly Algorithm</td>
+		<td>Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Facial emotion recognition</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>A Rosales-Pérez et al.</td>
+		<td>An Evolutionary Multi-Objective Model and Instance Selection for Support Vector Machines with Pareto-based Ensembles</td>
+		<td>multi: effectiveness, efficiency</td>
+		<td>Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>G Mauša, T G Grbac</td>
+		<td>Co-evolutionary Multi-population Genetic Programming for Classification in Software Defect Prediction: An Empirical Case Study</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Software Defect Prediction</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>D A Augusto, H J C Barbosa, N F F Ebecken</td>
+		<td>Coevolutionary Multi-population Genetic Programming for Data Classification</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Software Defect Prediction</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>V K Ojha, A Abraham, V Snášel</td>
+		<td>Ensemble of Heterogeneous Flexible Neural Trees using Multiobjective Genetic Programming</td>
+		<td>multi: effectiveness, diversity, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>both</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: pre-model, post model; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>A Peimankar, S J Weddell, T Jalal, A C Lapthorn</td>
+		<td>Evolutionary Multi-Objective Fault Diagnosis of Power Transformers</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Random Vector Functional Link (RVFL), KRIDGE, Naïve Bayes, K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Electric Transformer Fault Prediction</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>A Peimankar, S J Weddell, T Jalal, A C Lapthorn</td>
+		<td>Ensemble Classifier Selection using Multi-objective PSO for Fault Diagnosis of Power Transformers</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Random Vector Functional Link (RVFL), KRIDGE, Naïve Bayes, K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Electric Transformer Fault Prediction</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>Z K Pourtaheri, S H Zahiri</td>
+		<td>Ensemble Classifiers with Improved Overfitting</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Inclined Planes Optimization, Particle Swarm Optimization</td>
+		<td>Bayesian Network, K-Nearest Neighbors, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: first degree polynomial; selection: static</td>	</tr>
+	<tr>
+		<td>M Milliken, Y Bi, L Galway, G Hawe</td>
+		<td>Multi-objective Optimization of Base Classifiers in StackingC by NSGA-II for Intrusion Detection</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Classification Via Regression, Conjunctive Rule, Hyper Pipes, Decision Table, Voting Feature Intervals, Repeated Incremental Pruning to Produce Error Reduction (RIPPER), PART decision list, Decision Stump, Random Forests, Naïve Bayes, K-Nearest Neighbors, Decision/Arithmetic Trees</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Intrusion Detection</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>R Saleh, H Farsi, S H Zahiri</td>
+		<td>Ensemble Classification of PolSAR Data using Multi-objective Heuristic Combination Rule</td>
+		<td>multi: effectiveness</td>
+		<td>Particle Swarm Optimization</td>
+		<td>K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Radar image classification</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>A Onan, S Korukoğlu, H Bulut</td>
+		<td>A Multiobjective Weighted Voting Ensemble Classifier based on Differential Evolution Algorithm for Text Sentiment Classification</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Linear Discriminant Analysis, Logistic Regression, Naïve Bayes, Support Vector Machines</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Sentiment Analysis</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>V Basto-Fernandes et al.</td>
+		<td>A Spam Filtering Multi-objective Optimization Study Covering Parsimony Maximization and Three-way Classification</td>
+		<td>multi: effectiveness</td>
+		<td>Multi-Objective EA, Genetic Algorithms</td>
+		<td>Rule-based</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Spam detection</td>
+		<td>integration: first degree polynomial; selection: static</td>	</tr>
+	<tr>
+		<td>B Krawczyk, M Galar, Ł Jeleń, F Herrera</td>
+		<td>Evolutionary Undersampling Boosting for Imbalanced Classification of Breast Cancer Malignancy</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Breast Cancer Prediction</td>
+		<td>generation: instance selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>B Krawczyk, G Schaefer, M Woźniak</td>
+		<td>A hybrid Cost-sensitive Ensemble for Imbalanced Breast Thermogram Classification</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Breast Cancer Prediction</td>
+		<td>generation: instance selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>B Krawczyk, M Woźniak</td>
+		<td>Evolutionary Cost-sensitive Ensemble for Malware Detection</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Breast Cancer Prediction</td>
+		<td>generation: instance selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>S Oehmcke, J Heinermann, O Kramer</td>
+		<td>Analysis of Diversity Methods for Evolutionary Multi-objective Ensemble Classifiers</td>
+		<td>multi: effectiveness, efficiency</td>
+		<td>Genetic Algorithms</td>
+		<td>K-Nearest Neighbors, Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection; selection: static</td>	</tr>
+	<tr>
+		<td>S Gu, Y Jin</td>
+		<td>Generating Diverse and Accurate Classifier Ensembles using Multi-objective Optimization</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: instance selection, attribute selection</td>	</tr>
+	<tr>
+		<td>S E Lacy, M A Lones, S L Smith</td>
+		<td>Forming Classifier Ensembles with Multimodal Evolutionary Algorithms</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Programming, Genetic Programming</td>
+		<td>Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>both</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model; integration: expression trees</td>	</tr>
+	<tr>
+		<td>T P Lima, T B Ludermir</td>
+		<td>Differential Evolution and Meta-learning for Dynamic Ensemble of Neural Network Classifiers</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Differential Evolution</td>
+		<td>Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection, pre-model; selection: dynamic</td>	</tr>
+	<tr>
+		<td>E Parhizkar, M Abadi</td>
+		<td>BeeOWA: A Novel Approach based on ABC Algorithm and Induced OWA operators for Constructing One-class Classifier Ensembles</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Artificial Bee Colony</td>
+		<td>Parzen-Window, Support Vector Data Description, Random Subspace Method for Decision Forests</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>One-class classification</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>E Parhizkar, M Abadi</td>
+		<td>OC-WAD: A One-class Classifier Ensemble Approach for Anomaly Detection in Web Traffic</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Artificial Bee Colony</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>One-class web traffic anomaly detection</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>U K Sikdar, A Ekbal, S Saha</td>
+		<td>MODE: Multiobjective Differential Evolution for Feature Selection and Classifier Ensemble</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Differential Evolution</td>
+		<td>Conditional Random Fields</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Text Entity Recognition</td>
+		<td>generation: attribute selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>S Winkler et al.</td>
+		<td>Data-based Prediction of Sentiments using Heterogeneous Model Ensembles</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Gaussian Process Regression, Random Forests, K-Nearest Neighbors, Support Vector Machines, Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Sentiment Analysis</td>
+		<td>generation: attribute selection, pre-model</td>	</tr>
+	<tr>
+		<td>K Jackowski</td>
+		<td>Fixed-size Ensemble Classifier System Evolutionarily Adapted to a Recurring Context with an Unlimited Pool of Classifiers</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Naïve Bayes, K-Nearest Neighbors</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>A H Ko, R Sabourin, A d S Britto Jr</td>
+		<td>Evolving Ensemble of Classifiers in Random Subspace</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>K-Nearest Neighbors</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>E M Dos Santos, R Sabourin, P Maupin</td>
+		<td>Pareto Analysis for the Selection of Classifier Ensembles</td>
+		<td>multi: effectiveness, diversity, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>K-Nearest Neighbors</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>J Connolly, E Granger, R Sabourin</td>
+		<td>Dynamic Multi-objective Evolution of Classifier Ensembles for Video Face Recognition</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Particle Swarm Optimization</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Face recognition</td>
+		<td>generation: pre-model</td>	</tr>
+	<tr>
+		<td>J Lévesque, A Durand, C Gagné, R Sabourin</td>
+		<td>Multi-objective Evolutionary Optimization for Generating Ensembles of Classifiers in the ROC Space</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Linear Regression, Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>U K Sikdar, A Ekbal, S Saha</td>
+		<td>Differential Evolution based Multiobjective Optimization for Biomedical Entity Extraction</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Conditional Random Fields</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Text Entity Recognition</td>
+		<td>generation: attribute selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>K Kim, S Cho</td>
+		<td>An Evolutionary Algorithm Approach to Optimal Ensemble Classifiers for DNA Microarray Data Analysis</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Structure Adaptive Self-Organizing Map, K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>integration: first degree polynomial; selection: static</td>	</tr>
+	<tr>
+		<td>C Park, S Cho</td>
+		<td>Evolutionary Computation for Optimal Ensemble Classifier in Lymphoma Cancer Classification</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Structure Adaptive Self-Organizing Map, K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>A L Coelho, C A Lima, F Von Zuben</td>
+		<td>GA-based Selection of Components for Heterogeneous Ensembles of Support Vector Machines</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>A Rosales-Pérez et al.</td>
+		<td>Multi-objective Model Type Selection</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Random Forests, Support Vector Machines, Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: pre-model; selection: static</td>	</tr>
+	<tr>
+		<td>L C Hernández, A M Hernández, G M C Cardoso, Y M Jiménez</td>
+		<td>Genetic Algorithms with Diversity Measures to build Classifier Systems</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Stochastic Gradient Descent, Local Weighted Learning, KStar, Bayesian Network, Logistic Regression, Random Forests, Naïve Bayes, K-Nearest Neighbors, Support Vector Machines, Support Vector Machines, Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>H Chen, X Yao</td>
+		<td>Evolutionary Multiobjective Ensemble Learning based on Bayesian Feature Selection</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>P A D Castro, F J Von Zuben</td>
+		<td>Learning Ensembles of Neural Networks by Means of a Bayesian Artificial Immune System</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Estimation of Distribution Algorithm</td>
+		<td>Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model; selection: static</td>	</tr>
+	<tr>
+		<td>N Mehdiyev, J Krumeich, D Werth, P Loos</td>
+		<td>Sensor Event Mining with Hybrid Ensemble Learning and Evolutionary Feature Subset Selection Model</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Fuzzy rule-based Classifier, Rule-based</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General data stream-based classification and regression</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>J Cao, S Kwong, R Wang, K Li</td>
+		<td>An Indicator-based Selection Multi-objective Evolutionary Algorithm with Preference for Multi-class Ensemble</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: ecoc</td>	</tr>
+	<tr>
+		<td>A Garg, J S L Lam</td>
+		<td>Improving Environmental Sustainability by Formulation of Generalized Power Consumption Models using an Ensemble based Multi-gene Genetic Programming Approach</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>Power consumption estimation</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>K Trawinski, O Cordón, A Quirin</td>
+		<td>Embedding Evolutionary Multiobjective Optimization into Fuzzy Linguistic Combination method for Fuzzy Rule-based Classifier Ensembles</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Fuzzy rule-based Classifier</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: fuzzy system</td>	</tr>
+	<tr>
+		<td>T P de Lima, T B Ludermir</td>
+		<td>Ensembles of Evolutionary Extreme Learning Machines through Differential Evolution and Fitness Sharing</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: instance selection, post model</td>	</tr>
+	<tr>
+		<td>H Ishibuchi, T Yamamoto</td>
+		<td>Evolutionary multiobjective optimization for generating an ensemble of fuzzy rule-based classifiers</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Fuzzy rule-based Classifier</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>A Zagorecki</td>
+		<td>Feature Selection for Naive Bayesian Network Ensemble using Evolutionary Algorithms</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Naïve Bayes</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>S K K Santu, M M Rahman, M M Islam, K Murase</td>
+		<td>Towards better Generalization in Pittsburgh Learning Classifier Systems</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Rule-based</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Imbalanced classification</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>J Tian, N Feng</td>
+		<td>Adaptive Generalized Ensemble Construction with Feature Selection and its Application in Recommendation</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Recommendation Systems</td>
+		<td>generation: attribute selection, post model</td>	</tr>
+	<tr>
+		<td>Y Bazi et al.</td>
+		<td>Robust Estimation of Water Chlorophyll Concentrations with Gaussian Process Regression and IOWA Aggregation Operators</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Gaussian Process Regression</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>Estimation of Water Chlorophyll Concentration</td>
+		<td>integration: iowa</td>	</tr>
+	<tr>
+		<td>A Tsakonas</td>
+		<td>An analysis of Accuracy-diversity Trade-off for Hybrid Combined System with Multiobjective Predictor Selection</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Programming</td>
+		<td>Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>regression</td>
+		<td>General batch-based classification and regression</td>
+		<td>integration: expression trees</td>	</tr>
+	<tr>
+		<td>T Rapakoulia et al.</td>
+		<td>EnsembleGASVR: a Novel Ensemble Method for Classifying Missense Single Nucleotide Polymorphisms</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>Microarray Data</td>
+		<td>generation: attribute selection, pre-model</td>	</tr>
+	<tr>
+		<td>H J Escalante, N Acosta-Mendoza, A Morales-Reyes, A Gago-Alonso</td>
+		<td>Genetic Programming of Heterogeneous Ensembles for Classification</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Programming</td>
+		<td>KRIDGE, Logistic Regression, Random Forests, Naïve Bayes, K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Object Recognition</td>
+		<td>integration: expression trees</td>	</tr>
+	<tr>
+		<td>A Rahman, B Verma</td>
+		<td>Cluster Oriented Ensemble Classifiers using Multi-objective Evolutionary Algorithm</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>A Rahman, B Verma</td>
+		<td>Cluster Based Ensemble Classifier Generation by Joint Optimization of Accuracy and Diversity</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Support Vector Machines</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>U Bhowan, M Johnston, M Zhang</td>
+		<td>Evolving Ensembles in Multi-objective Genetic Programming for Classification with Unbalanced Data</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Imbalanced classification</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>E S Debie, K Shafi, C Lokan</td>
+		<td>REUCS-CRG: Reduct based Ensemble of Supervised Classifier System with Combinatorial Rule Generation for Data Mining</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution, Genetic Algorithms</td>
+		<td>Rule-based</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection, post model</td>	</tr>
+	<tr>
+		<td>E Debie, K Shafi, C Lokan, K Merrick</td>
+		<td>Performance Analysis of Rough set Ensemble of Learning Classifier Systems with Differential Evolution based rule Discovery</td>
+		<td>multi: effectiveness</td>
+		<td>nan</td>
+		<td>Rule-based</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection, post model</td>	</tr>
+	<tr>
+		<td>G Kumar, K Kumar</td>
+		<td>Design of an Evolutionary Approach for Intrusion Detection</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Naïve Bayes</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Intrusion Detection</td>
+		<td>generation: attribute selection; selection: static</td>	</tr>
+	<tr>
+		<td>M S Aliakbarian, A Fanian</td>
+		<td>Internet Traffic Classification Using MOEA and Online Refinement in Voting on Ensemble Methods</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Internet Traffic Classification</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>D Wang, M Alhamdoosh</td>
+		<td>Evolutionary Extreme Learning Machine Ensembles with Size Control</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>regression</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>M Galar, A Fernández, E Barrenechea, F Herrera</td>
+		<td>EUSBoost: Enhancing Ensembles for Highly Imbalanced Data-sets by Evolutionary Undersampling</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Imbalanced classification</td>
+		<td>generation: instance selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>K Trawiński, O Cordón, A Quirin, L Sánchez</td>
+		<td>Multiobjective Genetic Classifier Selection for Random Oracles Fuzzy Rule-based Classifier Ensembles: How Beneficial is the Additional Diversity?</td>
+		<td>multi: effectiveness, diversity, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Fuzzy rule-based Classifier</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: dynamic</td>	</tr>
+	<tr>
+		<td>S Vluymans, I Triguero, C Cornelis, Y Saeys</td>
+		<td>EPRENNID: An Evolutionary Prototype Reduction based Ensemble for Nearest Neighbor Classification of Imbalanced Data</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution, Genetic Algorithms</td>
+		<td>K-Nearest Neighbors</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Imbalanced classification</td>
+		<td>generation: instance selection</td>	</tr>
+	<tr>
+		<td>C Chiu, B Verma</td>
+		<td>Multi-objective Evolutionary Algorithm Based Optimization of Neural Network Ensemble Classifier</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>C J Tan, C P Lim, Y Cheah</td>
+		<td>A Multi-objective Evolutionary Algorithm-based Ensemble Optimizer for Feature Selection and Classification with Neural Network Models</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>both</td>
+		<td>classification</td>
+		<td>Motion Recognition, General batch-based classification and regression</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>W Chen, L Tseng, C Wu</td>
+		<td>A Unified Evolutionary Training scheme for Single and Ensemble of Feedforward Neural Network</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>both</td>
+		<td>classification</td>
+		<td>Motion Recognition, General batch-based classification and regression</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>T P F de Lima, A T Sergio, T B Ludermir</td>
+		<td>Improving Classifiers and Regions of Competence in Dynamic Ensemble Selection</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection, pre-model, post model</td>	</tr>
+	<tr>
+		<td>T P F De Lima, T B Ludermir</td>
+		<td>Optimizing Dynamic Ensemble Selection Procedure by Evolutionary Extreme Learning Machines and a Noise Reduction Filter</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection, pre-model, post model</td>	</tr>
+	<tr>
+		<td>W S Liew, C K Loo, T Obo</td>
+		<td>Optimizing FELM ensembles using GA-BIC</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Genetic Algorithms</td>
+		<td>Artificial Neural Networks</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: pre-model; selection: static</td>	</tr>
+	<tr>
+		<td>M Asafuddoula, B Verma, M Zhang</td>
+		<td>A Divide-and-Conquer Based Ensemble Classifier Learning by Means of Many-Objective Optimization</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Many-Objectives Evolutionary Algorithm</td>
+		<td>Discriminant Analysis, K-Nearest Neighbors, Support Vector Machines, Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>J Adair, A Brownlee, F Daolio, G Ochoa</td>
+		<td>Evolving Training sets for Improved Transfer Learning in Brain Computer Interfaces</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Bayesian Linear Discriminant Analysis</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>P300 Speller channel subset optimization</td>
+		<td>generation: instance selection</td>	</tr>
+	<tr>
+		<td>V Basto-Fernandes et al.</td>
+		<td>Quadcriteria Optimization of Binary Classifiers: Error Rates, Coverage, and Complexity</td>
+		<td>multi: effectiveness, complexity</td>
+		<td>Multi-Objective EA, Genetic Algorithms</td>
+		<td>Rule-based</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Spam detection</td>
+		<td>selection: static</td>	</tr>
+	<tr>
+		<td>A K Das, S Das, A Ghosh</td>
+		<td>Ensemble Feature Selection using Bi-objective Genetic Algorithm</td>
+		<td>multi: effectiveness</td>
+		<td>Genetic Algorithms</td>
+		<td>Naïve Bayes, K-Nearest Neighbors, Support Vector Machines, Support Vector Machines, Decision/Arithmetic Trees, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>General batch-based classification and regression</td>
+		<td>generation: attribute selection</td>	</tr>
+	<tr>
+		<td>U K Sikdar, A Ekbal, S Saha</td>
+		<td>Entity Extraction in Biochemical Text using Multiobjective Optimization</td>
+		<td>multi: effectiveness</td>
+		<td>Differential Evolution</td>
+		<td>Conditional Random Fields</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Text Entity Recognition</td>
+		<td>generation: attribute selection; integration: first degree polynomial</td>	</tr>
+	<tr>
+		<td>U Bhowan, M Johnston, M Zhang</td>
+		<td>Comparing Ensemble Learning Approaches in Genetic Programming for Classification with Unbalanced Data</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Programming</td>
+		<td>Decision/Arithmetic Trees</td>
+		<td>homogeneous</td>
+		<td>classification</td>
+		<td>Imbalanced classification</td>
+		<td>generation: post model</td>	</tr>
+	<tr>
+		<td>K Kim, S Cho</td>
+		<td>DNA Gene Expression Classification with Ensemble Classifiers Optimized by Speciated Genetic Algorithm</td>
+		<td>multi: effectiveness, diversity</td>
+		<td>Genetic Algorithms</td>
+		<td>Structure Adaptive Self-Organizing Map, K-Nearest Neighbors, Support Vector Machines, Artificial Neural Networks</td>
+		<td>heterogeneous</td>
+		<td>classification</td>
+		<td>Microarray Data</td>
+		<td>selection: static</td>	</tr>
+	</table>
+
+
+</div>
+</body>
+<script type="text/javascript">
+    function sortTable(n) {
+      let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("master_table");
+      switching = true;
+      // Set the sorting direction to ascending:
+      dir = "asc";
+      /* Make a loop that will continue until
+      no switching has been done: */
+      while (switching) {
+        // Start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /* Loop through all table rows (except the
+        first, which contains table headers): */
+        for (i = 1; i < (rows.length - 1); i++) {
+          // Start by saying there should be no switching:
+          shouldSwitch = false;
+          /* Get the two elements you want to compare,
+          one from current row and one from the next: */
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /* Check if the two rows should switch place,
+          based on the direction, asc or desc: */
+          if (dir === "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir === "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /* If a switch has been marked, make the switch
+          and mark that a switch has been done: */
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          // Each time a switch is done, increase this count by 1:
+          switchcount ++;
+        } else {
+          /* If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again. */
+          if (switchcount === 0 && dir === "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+</script>
+</html>

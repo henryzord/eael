@@ -5,8 +5,15 @@ This repository is a supplementary material to the paper
 > Cagnini, Henry E.L., das Dôres, Silvia C.N., Freitas, Alex A., Barros, Rodrigo C. A Survey of Evolutionary Algorithms 
 > for Supervised Ensemble Learning. In Knowledge Engineering Review. 2022.
 
-This data was used to generate tables and figures in the paper. It can also be queried to show specifics about each 
-reviewed paper.
+The data was used to generate tables and figures in the paper. 
+
+## Contents
+
+* [bibliography.bib](bibliography.bib): The bibliography as used in the LaTeX project. Contains references not only for
+  surveyed papers, but for other work too.
+* [data.json](data.json): Metadata on the reviewed papers featured in the survey. 
+* [index.html](index.html): a master table, compiled from the [data.json](data.json) file, that shows all collected 
+  information on reviewed papers.
 
 ## Installation
 
