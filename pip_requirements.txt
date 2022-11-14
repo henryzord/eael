@@ -1,2 +1,3 @@
 matplotlib-venn==0.11.*
 bibtexparser==1.4.*
+pylatexenc==2.10.*
