@@ -16,7 +16,7 @@ The data shown here was used to generate tables and figures in the paper.
 * [data.json](data.json): Metadata on the reviewed papers featured in the survey. 
 * [index.html](index.html): a master table, compiled from the [data.json](data.json) file, that shows all collected 
   information on reviewed papers. You can view the rendered page in 
-  [https://github.com/henryzord/eael](https://github.com/henryzord/eael).
+  [https://henryzord.github.io/eael](https://henryzord.github.io/eael).
 
 ## Installation
 
