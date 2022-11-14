@@ -49,7 +49,7 @@ def build_dataframe(d: dict) -> pd.DataFrame:
                         composed[ref] = dict()
 
                     if category in composed[ref]:
-                        composed[ref][category] = composed[ref][category] + ', ' + value
+                        composed[ref][category] += ', ' + value
                     else:
                         composed[ref][category] = value
 
@@ -61,7 +61,10 @@ def build_dataframe(d: dict) -> pd.DataFrame:
                             composed[ref] = dict()
 
                         if category in composed[ref]:
-                            composed[ref][category] = composed[ref][category] + ', ' + subcategory
+                            if value + ':' in composed[ref][category]:
+                                composed[ref][category] += ', ' + subcategory
+                            else:
+                                composed[ref][category] += '; ' + value + ': ' + subcategory
                         else:
                             composed[ref][category] = value + ': ' + subcategory
 
@@ -73,9 +76,15 @@ def build_html_table(df: pd.DataFrame, refs: BibDatabase) -> str:
     string = '''<table id="master_table">\n'''
 
     string += '\t<tr>\n'
-    string += '\t\t<th onclick="sortTable(0)">Authors</th>\n\t\t<th onclick="sortTable(1)">Title</th>\n'
+    string += '''
+        \t\t<th class="wide" onclick="sortTable(0)">Authors</th>
+        \n\t\t<th class="wide" onclick="sortTable(1)">Title</th>\n
+    '''
+
     for i, column in enumerate(df.columns):
-        string += '\t\t<th onclick="sortTable({0})">'.format(i + 2) + column + '</th>\n'
+        string += '''
+            \t\t<th onclick="sortTable({0})">
+        '''.format(i + 2) + column + '</th>\n'
     string += '\t</tr>\n'
 
     for i, row in df.iterrows():
@@ -91,9 +100,9 @@ def build_html_table(df: pd.DataFrame, refs: BibDatabase) -> str:
 
 def main(data_path, bibliography_path, template_path, write_path):
     with \
-            open(data_path, 'r') as references_file, \
-            open(bibliography_path, 'r') as refs_file, \
-            open(template_path, 'r') as template_file, \
+            open(data_path, 'r', encoding='utf-8') as references_file, \
+            open(bibliography_path, 'r', encoding='utf-8') as refs_file, \
+            open(template_path, 'r', encoding='utf-8') as template_file, \
             open(write_path, 'w', encoding='utf-8') as write_file:
         data = json.load(references_file)  # type: dict
         df = build_dataframe(data)

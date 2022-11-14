@@ -6,31 +6,20 @@
     <title>Master Table</title>
     <style>
         * {
-            font-family: Verdana, sans-serif;
+            font-family: Helvetica, sans-serif;
+            font-size: 12pt;
         }
 
-        /* se aplica a todos os elementos que não foram especificados abaixo */
         .center {
             margin: auto;
             width: 95%;
             height: 100%;
         }
 
-        /* se aplica apenas a títulos h1 com a classe centro */
         h1.center {
             text-align: center;
-        }
-
-        /* se aplica apenas a parágrafos com a classe centro */
-        p.center {
-            text-align: center;
-        }
-
-        /* se aplica apenas a imagens com a classe centro */
-        img.center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin-bottom: 20px;
+            font-size: 20pt;
         }
 
         body {
@@ -46,10 +35,39 @@
             padding-left: 30px;
             padding-right: 30px;
         }
+
+        td, th {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #D0D0D0;
+        }
+
+        th:hover {
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        th.wide {
+            width: 250px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+
+        tr:hover {
+            background-color: #D0D0D0;
+        }
+
+
     </style>
 </head>
 <body>
 <div class="center white-background">
+    <br/>
     <h1 class="center">Master Table</h1>
 
     {{ master_table }}
