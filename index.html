@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Master Table</title>
+    <title>📗 Master Table</title>
     <style>
         * {
             font-family: Helvetica, sans-serif;
@@ -46,7 +46,7 @@
         }
 
         th:hover {
-            color: blueviolet;
+            color: rgb(133, 97, 254);
             cursor: pointer;
         }
 
@@ -68,7 +68,15 @@
 <body>
 <div class="center white-background">
     <br/>
-    <h1 class="center">Master Table</h1>
+	<h1 class="center">Master Table</h1>
+    <p>
+        This page displays detailed information on all surveyed papers featured in
+        <pre>
+            Cagnini, Henry E.L., das Dôres, Silvia C.N., Freitas, Alex A., Barros, Rodrigo C. A Survey of Evolutionary
+            Algorithms for Supervised Ensemble Learning. In Knowledge Engineering Review. 2022.
+        </pre>
+	</p>
+    <p>See <a href="https://github.com/henryzord/eael">https://github.com/henryzord/eael</a> for more information.</p>
 
     <table id="master_table">
 	<tr>
@@ -1745,6 +1753,8 @@
 </div>
 </body>
 <script type="text/javascript">
+    // code adapted from w3 schools: https://www.w3schools.com/howto/howto_js_sort_table.asp
+
     function sortTable(n) {
       let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
       table = document.getElementById("master_table");
