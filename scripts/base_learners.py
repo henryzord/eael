@@ -93,7 +93,9 @@ def main(data_path, output_path):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Script for generating venn diagram for paper.')
+    parser = argparse.ArgumentParser(
+        description='Script for generating bar plot of surveyed work vs base learner employed.'
+    )
     parser.add_argument(
         '--data', action='store', required=True,
         help='Path to .json file with all citation references'
