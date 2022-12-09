@@ -10,6 +10,8 @@ import os
 import numpy as np
 from matplotlib import cm
 from matplotlib import pyplot as plt
+from matplotlib.patches import Circle
+from matplotlib.text import Text
 from matplotlib_venn import venn3, venn3_circles
 import matplotlib.patches as mpatches
 from matplotlib.collections import PatchCollection
@@ -21,6 +23,9 @@ def plot_venn_diagram(tables, output_path):
     fig, ax = plt.subplots(figsize=(7, 4))
 
     colors = cm.viridis(np.arange(0, 1, 0.1))
+
+    group_label_fontsize = 14
+    amount_label_fontsize = 16
 
     df = tables['objective']
 
@@ -77,7 +82,7 @@ def plot_venn_diagram(tables, output_path):
         edgecolor='black', linewidth=3.
     )]
 
-    plt.text(-0.825, 0.45, 'effectiveness (%d)' % len(mf), fontdict=dict(size=12))
+    plt.text(-0.825, 0.45, 'effectiveness (%d)' % len(mf), fontdict=dict(size=group_label_fontsize))
 
     collection = PatchCollection(patches, alpha=0.3)
     collection.set_color('white')
@@ -89,12 +94,19 @@ def plot_venn_diagram(tables, output_path):
         set_colors=[colors[0], colors[4], colors[8]]
     )
 
-    c = venn3_circles(subsets=subsets, linestyle='solid', linewidth=0.8)
+    plot = venn3_circles(subsets=subsets, linestyle='solid', linewidth=0.8)
 
     for code, color in zip(codes, venn_colors):
-        patch = v.get_patch_by_id(code)
+        patch = v.get_patch_by_id(code)  # type: Circle
         if patch is not None:
             patch.set_color(color)
+
+    for text in v.set_labels:  # type: Text
+        text.set_fontsize(group_label_fontsize)
+
+    for text in v.subset_labels:  # type: Text
+        if text is not None:
+            text.set_fontsize(amount_label_fontsize)
 
     plt.axis('on')
     plt.tight_layout()
