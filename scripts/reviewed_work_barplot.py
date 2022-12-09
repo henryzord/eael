@@ -13,7 +13,7 @@ def main(output_path):
     ax.set_xlim(-5, 105)
     ax.set_ylim(0, 5)
 
-    labels = ['unavailable', 'not reviewed', 'wrong', 'original', 'duplicated']
+    labels = ['unavailable', 'truncated', 'wrong', 'original', 'duplicated']
     bars_y = [2.5]
     bars_x = [[12], [36], [11], [36], [5]]
 
@@ -42,7 +42,7 @@ def main(output_path):
 
     plt.axis('off')
     plt.tight_layout()
-    # plt.savefig(os.path.join(output_path, 'metadata_barplot.pdf'), format='pdf')
+    plt.savefig(os.path.join(output_path, 'metadata_pie.pdf'), format='pdf')
     plt.show()
 
 
